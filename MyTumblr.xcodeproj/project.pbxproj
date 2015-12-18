@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EECB85C21C24CF4600CCC006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB85C11C24CF4600CCC006 /* main.m */; };
+		EECB85C51C24CF4600CCC006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB85C41C24CF4600CCC006 /* AppDelegate.m */; };
+		EECB85C81C24CF4600CCC006 /* MyTumblr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EECB85C61C24CF4600CCC006 /* MyTumblr.xcdatamodeld */; };
+		EECB85CB1C24CF4600CCC006 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB85CA1C24CF4600CCC006 /* MasterViewController.m */; };
+		EECB85CE1C24CF4600CCC006 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB85CD1C24CF4600CCC006 /* DetailViewController.m */; };
+		EECB85D11C24CF4600CCC006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB85CF1C24CF4600CCC006 /* Main.storyboard */; };
+		EECB85D31C24CF4600CCC006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECB85D21C24CF4600CCC006 /* Assets.xcassets */; };
+		EECB85D61C24CF4600CCC006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB85D41C24CF4600CCC006 /* LaunchScreen.storyboard */; };
+		EECB85E11C24CF4700CCC006 /* MyTumblrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB85E01C24CF4700CCC006 /* MyTumblrTests.m */; };
+		EECB85EC1C24CF4700CCC006 /* MyTumblrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB85EB1C24CF4700CCC006 /* MyTumblrUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EECB85DD1C24CF4700CCC006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EECB85B51C24CF4600CCC006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB85BC1C24CF4600CCC006;
+			remoteInfo = MyTumblr;
+		};
+		EECB85E81C24CF4700CCC006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EECB85B51C24CF4600CCC006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB85BC1C24CF4600CCC006;
+			remoteInfo = MyTumblr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EECB85BD1C24CF4600CCC006 /* MyTumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB85C11C24CF4600CCC006 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EECB85C31C24CF4600CCC006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EECB85C41C24CF4600CCC006 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EECB85C71C24CF4600CCC006 /* MyTumblr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTumblr.xcdatamodel; sourceTree = "<group>"; };
+		EECB85C91C24CF4600CCC006 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		EECB85CA1C24CF4600CCC006 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		EECB85CC1C24CF4600CCC006 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EECB85CD1C24CF4600CCC006 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EECB85D01C24CF4600CCC006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EECB85D21C24CF4600CCC006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EECB85D51C24CF4600CCC006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EECB85D71C24CF4600CCC006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECB85DC1C24CF4700CCC006 /* MyTumblrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTumblrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB85E01C24CF4700CCC006 /* MyTumblrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTumblrTests.m; sourceTree = "<group>"; };
+		EECB85E21C24CF4700CCC006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECB85E71C24CF4700CCC006 /* MyTumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB85EB1C24CF4700CCC006 /* MyTumblrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTumblrUITests.m; sourceTree = "<group>"; };
+		EECB85ED1C24CF4700CCC006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EECB85BA1C24CF4600CCC006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB85D91C24CF4700CCC006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB85E41C24CF4700CCC006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EECB85B41C24CF4600CCC006 = {
+			isa = PBXGroup;
+			children = (
+				EECB85BF1C24CF4600CCC006 /* MyTumblr */,
+				EECB85DF1C24CF4700CCC006 /* MyTumblrTests */,
+				EECB85EA1C24CF4700CCC006 /* MyTumblrUITests */,
+				EECB85BE1C24CF4600CCC006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EECB85BE1C24CF4600CCC006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EECB85BD1C24CF4600CCC006 /* MyTumblr.app */,
+				EECB85DC1C24CF4700CCC006 /* MyTumblrTests.xctest */,
+				EECB85E71C24CF4700CCC006 /* MyTumblrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EECB85BF1C24CF4600CCC006 /* MyTumblr */ = {
+			isa = PBXGroup;
+			children = (
+				EECB85C31C24CF4600CCC006 /* AppDelegate.h */,
+				EECB85C41C24CF4600CCC006 /* AppDelegate.m */,
+				EECB85C91C24CF4600CCC006 /* MasterViewController.h */,
+				EECB85CA1C24CF4600CCC006 /* MasterViewController.m */,
+				EECB85CC1C24CF4600CCC006 /* DetailViewController.h */,
+				EECB85CD1C24CF4600CCC006 /* DetailViewController.m */,
+				EECB85CF1C24CF4600CCC006 /* Main.storyboard */,
+				EECB85D21C24CF4600CCC006 /* Assets.xcassets */,
+				EECB85D41C24CF4600CCC006 /* LaunchScreen.storyboard */,
+				EECB85D71C24CF4600CCC006 /* Info.plist */,
+				EECB85C61C24CF4600CCC006 /* MyTumblr.xcdatamodeld */,
+				EECB85C01C24CF4600CCC006 /* Supporting Files */,
+			);
+			path = MyTumblr;
+			sourceTree = "<group>";
+		};
+		EECB85C01C24CF4600CCC006 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EECB85C11C24CF4600CCC006 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EECB85DF1C24CF4700CCC006 /* MyTumblrTests */ = {
+			isa = PBXGroup;
+			children = (
+				EECB85E01C24CF4700CCC006 /* MyTumblrTests.m */,
+				EECB85E21C24CF4700CCC006 /* Info.plist */,
+			);
+			path = MyTumblrTests;
+			sourceTree = "<group>";
+		};
+		EECB85EA1C24CF4700CCC006 /* MyTumblrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EECB85EB1C24CF4700CCC006 /* MyTumblrUITests.m */,
+				EECB85ED1C24CF4700CCC006 /* Info.plist */,
+			);
+			path = MyTumblrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EECB85BC1C24CF4600CCC006 /* MyTumblr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB85F01C24CF4700CCC006 /* Build configuration list for PBXNativeTarget "MyTumblr" */;
+			buildPhases = (
+				EECB85B91C24CF4600CCC006 /* Sources */,
+				EECB85BA1C24CF4600CCC006 /* Frameworks */,
+				EECB85BB1C24CF4600CCC006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTumblr;
+			productName = MyTumblr;
+			productReference = EECB85BD1C24CF4600CCC006 /* MyTumblr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EECB85DB1C24CF4700CCC006 /* MyTumblrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB85F31C24CF4700CCC006 /* Build configuration list for PBXNativeTarget "MyTumblrTests" */;
+			buildPhases = (
+				EECB85D81C24CF4700CCC006 /* Sources */,
+				EECB85D91C24CF4700CCC006 /* Frameworks */,
+				EECB85DA1C24CF4700CCC006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EECB85DE1C24CF4700CCC006 /* PBXTargetDependency */,
+			);
+			name = MyTumblrTests;
+			productName = MyTumblrTests;
+			productReference = EECB85DC1C24CF4700CCC006 /* MyTumblrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EECB85E61C24CF4700CCC006 /* MyTumblrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB85F61C24CF4700CCC006 /* Build configuration list for PBXNativeTarget "MyTumblrUITests" */;
+			buildPhases = (
+				EECB85E31C24CF4700CCC006 /* Sources */,
+				EECB85E41C24CF4700CCC006 /* Frameworks */,
+				EECB85E51C24CF4700CCC006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EECB85E91C24CF4700CCC006 /* PBXTargetDependency */,
+			);
+			name = MyTumblrUITests;
+			productName = MyTumblrUITests;
+			productReference = EECB85E71C24CF4700CCC006 /* MyTumblrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EECB85B51C24CF4600CCC006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jakub Kaliszyk";
+				TargetAttributes = {
+					EECB85BC1C24CF4600CCC006 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EECB85DB1C24CF4700CCC006 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EECB85BC1C24CF4600CCC006;
+					};
+					EECB85E61C24CF4700CCC006 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EECB85BC1C24CF4600CCC006;
+					};
+				};
+			};
+			buildConfigurationList = EECB85B81C24CF4600CCC006 /* Build configuration list for PBXProject "MyTumblr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EECB85B41C24CF4600CCC006;
+			productRefGroup = EECB85BE1C24CF4600CCC006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EECB85BC1C24CF4600CCC006 /* MyTumblr */,
+				EECB85DB1C24CF4700CCC006 /* MyTumblrTests */,
+				EECB85E61C24CF4700CCC006 /* MyTumblrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EECB85BB1C24CF4600CCC006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB85D61C24CF4600CCC006 /* LaunchScreen.storyboard in Resources */,
+				EECB85D31C24CF4600CCC006 /* Assets.xcassets in Resources */,
+				EECB85D11C24CF4600CCC006 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB85DA1C24CF4700CCC006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB85E51C24CF4700CCC006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EECB85B91C24CF4600CCC006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB85CE1C24CF4600CCC006 /* DetailViewController.m in Sources */,
+				EECB85CB1C24CF4600CCC006 /* MasterViewController.m in Sources */,
+				EECB85C81C24CF4600CCC006 /* MyTumblr.xcdatamodeld in Sources */,
+				EECB85C51C24CF4600CCC006 /* AppDelegate.m in Sources */,
+				EECB85C21C24CF4600CCC006 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB85D81C24CF4700CCC006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB85E11C24CF4700CCC006 /* MyTumblrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB85E31C24CF4700CCC006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB85EC1C24CF4700CCC006 /* MyTumblrUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EECB85DE1C24CF4700CCC006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EECB85BC1C24CF4600CCC006 /* MyTumblr */;
+			targetProxy = EECB85DD1C24CF4700CCC006 /* PBXContainerItemProxy */;
+		};
+		EECB85E91C24CF4700CCC006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EECB85BC1C24CF4600CCC006 /* MyTumblr */;
+			targetProxy = EECB85E81C24CF4700CCC006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EECB85CF1C24CF4600CCC006 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EECB85D01C24CF4600CCC006 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EECB85D41C24CF4600CCC006 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EECB85D51C24CF4600CCC006 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EECB85EE1C24CF4700CCC006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EECB85EF1C24CF4700CCC006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EECB85F11C24CF4700CCC006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyTumblr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = realit.MyTumblr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EECB85F21C24CF4700CCC006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyTumblr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = realit.MyTumblr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EECB85F41C24CF4700CCC006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyTumblrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = realit.MyTumblrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTumblr.app/MyTumblr";
+			};
+			name = Debug;
+		};
+		EECB85F51C24CF4700CCC006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyTumblrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = realit.MyTumblrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTumblr.app/MyTumblr";
+			};
+			name = Release;
+		};
+		EECB85F71C24CF4700CCC006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyTumblrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = realit.MyTumblrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyTumblr;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EECB85F81C24CF4700CCC006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyTumblrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = realit.MyTumblrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyTumblr;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EECB85B81C24CF4600CCC006 /* Build configuration list for PBXProject "MyTumblr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB85EE1C24CF4700CCC006 /* Debug */,
+				EECB85EF1C24CF4700CCC006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECB85F01C24CF4700CCC006 /* Build configuration list for PBXNativeTarget "MyTumblr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB85F11C24CF4700CCC006 /* Debug */,
+				EECB85F21C24CF4700CCC006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EECB85F31C24CF4700CCC006 /* Build configuration list for PBXNativeTarget "MyTumblrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB85F41C24CF4700CCC006 /* Debug */,
+				EECB85F51C24CF4700CCC006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EECB85F61C24CF4700CCC006 /* Build configuration list for PBXNativeTarget "MyTumblrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB85F71C24CF4700CCC006 /* Debug */,
+				EECB85F81C24CF4700CCC006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EECB85C61C24CF4600CCC006 /* MyTumblr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EECB85C71C24CF4600CCC006 /* MyTumblr.xcdatamodel */,
+			);
+			currentVersion = EECB85C71C24CF4600CCC006 /* MyTumblr.xcdatamodel */;
+			path = MyTumblr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EECB85B51C24CF4600CCC006 /* Project object */;
+}
