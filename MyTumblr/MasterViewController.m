@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "TumblrAPIController.h"
 
 @interface MasterViewController ()
 
@@ -23,6 +24,8 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.tableView.backgroundView = [UIView new];
+    self.tableView.backgroundView.backgroundColor = [UIColor darkGrayColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -36,14 +39,42 @@
 }
 
 - (void)insertNewObject:(id)sender {
+    //provide username in alert textfield
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Hello!" message:@"Please enter Tumblr username:" delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    UITextField * alertTextField = [alert textFieldAtIndex:0];
+    alertTextField.placeholder = @"Tumblr username";
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSString *tumblrUsername = [[alertView textFieldAtIndex:0] text];
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+    //check if username exists on tumblr
+    if ([TumblrAPIController tumblrUserExists:tumblrUsername]) {
+        [newManagedObject setValue:[[alertView textFieldAtIndex:0] text] forKey:@"user"];
+    } else {
+    //show alert if username not found
+        UIAlertController *alertController = [UIAlertController
+                                              alertControllerWithTitle:@"Error!"
+                                              message:@"Tumblr user not found"
+                                              preferredStyle:UIAlertControllerStyleAlert];
         
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *action)
+                                   {
+                                   }];
         
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
+    
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
@@ -52,7 +83,9 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
+
 }
+
 
 #pragma mark - Segues
 
@@ -106,7 +139,7 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    cell.textLabel.text = [[object valueForKey:@"user"] description];
 }
 
 #pragma mark - Fetched results controller
@@ -126,7 +159,7 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"user" ascending:NO];
 
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
     
@@ -198,6 +231,22 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // for inset to be width-full
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
 }
 
 /*

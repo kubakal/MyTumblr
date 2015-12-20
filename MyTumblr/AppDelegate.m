@@ -27,6 +27,7 @@
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
     MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    self.window.tintColor = [UIColor blackColor];
     return YES;
 }
 
